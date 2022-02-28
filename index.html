@@ -5,14 +5,28 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aperiam quos doloremque sunt sequi adipisci doloribus qui labore voluptatibus iure? Ut a illum quos cupiditate rerum laudantium alias maxime natus quae!</p>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi exercitationem consequatur totam. Sint, facilis exercitationem. Quia qui officiis laudantium delectus tempora libero tenetur voluptatibus, temporibus nesciunt recusandae at nulla repellat.</p>
-    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus hic a reiciendis ea animi, soluta provident ad exercitationem beatae possimus, voluptate, accusantium eum nam dicta. Quod dolores ut hic sint.</p>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos magni numquam quod unde inventore molestias ex debitis, natus earum. Ex impedit deleniti nemo accusamus unde repudiandae beatae laboriosam eaque? Quos.</p>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos nulla corporis repudiandae cum facilis nesciunt, fuga illo mollitia neque incidunt quibusdam quod blanditiis. Delectus, harum mollitia sit libero odio natus.</p>
-    <p id="prime-number"></p>
+    <h1>Schiavi Calcolatori</h1>
+    <input type="number" name="" id="input">
+    <div>
+        <button onclick="calcPrime()">Calcola numeri primi</button>
+        <img id="loader-prime" style="display: none;" src="./loading.gif" alt="">
+        <p id="result-prime"></p>
+    </div>
+    <div>
+        <button onclick="calcFactorial()">Calcola Fattoriale</button>
+        <img id="loader-factorial" style="display: none;" src="./loading.gif" alt="">
+        <p id="result-factorial"></p>
+    </div>
+    <div>
+        <button onclick="calcFibonacci()">Calcola Fibonacci</button>
+        <img id="loader-fibonacci" style="display: none;" src="./loading.gif" alt="">
+        <div class="progress-bar" id="progress-bar"></div>
+        <p id="result-fibonacci"></p>
+    </div>
+
 </body>
 <script src="./script.js"></script>
 </html>
